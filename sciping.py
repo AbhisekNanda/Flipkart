@@ -4,27 +4,6 @@ import pandas as pd
 
 df = pd.DataFrame(columns=['link'])
 
-# for i in range (1,42):
-#     print(i)
-#     device = 'laptop'
-#     url='https://www.flipkart.com/search?q='+device+'&as=on&as-show=on&otracker=AS_Query_HistoryAutoSuggest_1_3_na_na_na&otracker1=AS_Query_HistoryAutoSuggest_1_3_na_na_na&as-pos=1&as-type=HISTORY&suggestionId=mobile&requestId=79a16347-3955-46ab-a6be-654ee587d84e&as-backfill=on&page='+str(i)
-#     headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win 64 ; x64) Apple WeKit /537.36(KHTML , like Gecko) Chrome/80.0.3987.162 Safari/537.36'}
-#     webpage=requests.get(url,headers=headers).text
-#     soup=BeautifulSoup(webpage,"html.parser")
-
-#     link=[]
-#     for i in soup.find_all('a',{'class':"_1fQZEK"}):
-#         link.append(str(i['href']))
-    
-#     # print(link)
-#     df1= pd.DataFrame({'link':link})
-#     print('////////////////////////////////////////////////////')
-#     print('////////////////////////////////////////////////////')
-#     print('////////////////////////////////////////////////////')
-    
-#     df=pd.concat([df,df1])
-
-# df.to_csv('laptop_link.csv',index=False)
 
 laptop_data=pd.read_csv('laptop_link.csv')
 num=0

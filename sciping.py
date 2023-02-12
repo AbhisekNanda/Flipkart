@@ -7,8 +7,7 @@ df = pd.DataFrame(columns=['link'])
 
 laptop_data=pd.read_csv('laptop_link.csv')
 num=0
-# print(laptop_data['link'])
-#link img brand name price discount_price rating count_rating count_review feature- Color SSD RAM Operating System Screen Size Disk Drive Warranty Summary
+
 df2 = pd.DataFrame(columns=['link','img','brand','name','price','discount_price','Color','SSD','RAM','Operating_System','Screen_Size',
 'Disk_Drive','Warranty Summary','rating_performance','rating_battery','rating_desing','rating_display',
 'rating','count_rating','count_review'])
